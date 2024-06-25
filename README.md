@@ -1,4 +1,4 @@
-# Sorting-Visualizer
+# Sorting Visualizer
 
 Welcome to *Sorting-Visualizer*! This repository houses a graphical user interface (GUI) designed to visualize various sorting algorithms in real-time. Whether you're a newcomer to sorting algorithms or an experienced developer looking to explore them visually, *Sorting-Visualizer* provides an intuitive platform to witness these algorithms in action.
 
@@ -45,7 +45,7 @@ To get started with SortingTest, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/kerBiy/SortingTest.git
+git clone https://github.com/kerBiy/sorting-visualizer.git
 ```
 
 2. Open the terminal in the root folder of the project.

@@ -1,5 +1,0 @@
-/Users/alexbalta/Developer/C++/qt-projects/sorting-visualiser/cmake-build-debug/CMakeFiles/sorting_visualiser.dir
-/Users/alexbalta/Developer/C++/qt-projects/sorting-visualiser/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/alexbalta/Developer/C++/qt-projects/sorting-visualiser/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/alexbalta/Developer/C++/qt-projects/sorting-visualiser/cmake-build-debug/CMakeFiles/sorting_visualiser_autogen_timestamp_deps.dir
-/Users/alexbalta/Developer/C++/qt-projects/sorting-visualiser/cmake-build-debug/CMakeFiles/sorting_visualiser_autogen.dir

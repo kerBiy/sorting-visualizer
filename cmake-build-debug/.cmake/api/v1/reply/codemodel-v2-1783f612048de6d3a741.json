@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sorting_visualiser",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sorting_visualiser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sorting_visualiser-Debug-5a727b182745b6040c38.json",
+					"name" : "sorting_visualiser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sorting_visualiser_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sorting_visualiser_autogen-Debug-91b4ff1e5d804ea58a5b.json",
+					"name" : "sorting_visualiser_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sorting_visualiser_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sorting_visualiser_autogen_timestamp_deps-Debug-37ba3a3f584eee23fd7d.json",
+					"name" : "sorting_visualiser_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/alexbalta/Developer/C++/qt-projects/sorting-visualiser/cmake-build-debug",
+		"source" : "/Users/alexbalta/Developer/C++/qt-projects/sorting-visualiser"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

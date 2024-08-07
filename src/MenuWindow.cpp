@@ -2,7 +2,7 @@
 // Created by Alex Balta on 03.07.2024.
 //
 
-#include "../headers/MenuWindow.hpp"
+#include "MenuWindow.hpp"
 
 MenuWindow::MenuWindow(QGraphicsScene *scene, QGraphicsView *view, QWidget *parent)
     : QWidget(parent),

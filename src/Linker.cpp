@@ -1,19 +1,25 @@
 // Created by Alex Balta on 03.07.2024.
 
-#include "../headers/Linker.hpp"
-#include "../headers/MenuWindow.hpp"
+#include "Linker.hpp"
+#include "MenuWindow.hpp"
+
 #include <cmath>
+#include <QTimer>
 
 Linker::Linker(MenuWindow *parent, std::vector<Item> &array, int size, QGraphicsScene *scene, int delay)
     : m_parent(parent), m_size(size), m_scene(scene), m_delay(delay) {
+
     m_width = std::max(512 / m_size, 1);
     m_array.resize(m_size);
-    for (int i = 0; i < m_size; i++) {
+
+    for (int i = 0; i < m_size; ++i) {
         m_array[i] = &array[i];
         m_array[i]->setPlace(i + 1);
+
         int height = (m_array[i]->getVal() + 1) * m_width;
         float left = 10 + i * m_width;
         float intleft = std::floor(left);
+
         if (left - intleft < 0.1) {
             left = intleft;
         } else if (left - intleft < 0.6) {
@@ -21,6 +27,7 @@ Linker::Linker(MenuWindow *parent, std::vector<Item> &array, int size, QGraphics
         } else {
             left = intleft + 1;
         }
+
         int up = 540 - height;
         if (m_size <= 256) {
             QPen pen = QPen(Qt::black);
@@ -36,7 +43,7 @@ Linker::Linker(MenuWindow *parent, std::vector<Item> &array, int size, QGraphics
 }
 
 void Linker::delay() {
-    for (int i = 0; i <= m_delay / 6; i++) {
+    for (int i = 0; i <= m_delay / 6; ++i) {
         QApplication::processEvents();
     }
 }
@@ -45,6 +52,7 @@ void Linker::render(int i, QColor C) {
     int height = (m_array[i]->getVal() + 1) * m_width;
     int left = 10 + i * m_width;
     int up = 540 - height;
+
     if (m_size <= 256) {
         QPen pen = QPen(Qt::black);
         QBrush brush = QBrush(C);
@@ -59,14 +67,13 @@ void Linker::render(int i, QColor C) {
 }
 
 Linker::~Linker() {
-    for (int i = 0; i < m_size; ++i) {
-        if (m_size <= 256) {
-            m_scene->removeItem(m_rects[i]);
-            delete m_rects[i];
-        } else {
-            m_scene->removeItem(m_lines[i]);
-            delete m_lines[i];
-        }
+    for (auto *rect : m_rects) {
+        m_scene->removeItem(rect);
+        delete rect;
+    }
+    for (auto *line : m_lines) {
+        m_scene->removeItem(line);
+        delete line;
     }
 }
 

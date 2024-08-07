@@ -2,7 +2,7 @@
 // Created by Alex Balta on 03.07.2024.
 //
 
-#include "../headers/Sorter.hpp"
+#include "Sorter.hpp"
 
 Sorter::Sorter(Linker *linker) {
     m_link = linker;

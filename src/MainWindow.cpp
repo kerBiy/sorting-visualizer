@@ -2,7 +2,7 @@
 // Created by Alex Balta on 05.07.2024.
 //
 
-#include "../headers/MainWindow.hpp"
+#include "MainWindow.hpp"
 
 MainWindow::MainWindow(QGraphicsScene *scene, QGraphicsView *view, MenuWindow *menu, QWidget *parent)
     : QMainWindow(parent), m_scene(scene), m_view(view), m_menu(menu), m_parent(parent) {

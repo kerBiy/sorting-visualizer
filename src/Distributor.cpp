@@ -1,7 +1,7 @@
 // Created by Alex Balta on 03.07.2024.
 //
 
-#include "../headers/Distributor.hpp"
+#include "Distributor.hpp"
 
 Distributor::Distributor(std::vector<Item> &list)
     : items(list),

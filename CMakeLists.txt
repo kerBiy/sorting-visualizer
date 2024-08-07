@@ -13,20 +13,21 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(sorting_visualiser main.cpp
-        MenuWindow.cpp
-        MenuWindow.hpp
-        OptionManager.cpp
-        OptionManager.hpp
-        Distributor.cpp
-        Distributor.hpp
-        Item.hpp
-        Linker.cpp
-        Linker.hpp
-        Sorter.cpp
-        Sorter.hpp
-        MainWindow.cpp
-        MainWindow.hpp)
+add_executable(sorting_visualiser src/main.cpp
+        src/MenuWindow.cpp
+        headers/MenuWindow.hpp
+        src/OptionManager.cpp
+        headers/OptionManager.hpp
+        src/Distributor.cpp
+        headers/Distributor.hpp
+        headers/Item.hpp
+        src/Linker.cpp
+        headers/Linker.hpp
+        src/Sorter.cpp
+        headers/Sorter.hpp
+        src/MainWindow.cpp
+        headers/MainWindow.hpp)
+
 target_link_libraries(sorting_visualiser
         Qt::Core
         Qt::Gui

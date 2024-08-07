@@ -1,7 +1,7 @@
 // Created by Alex Balta on 03.07.2024.
 
-#include "Linker.hpp"
-#include "MenuWindow.hpp"
+#include "../headers/Linker.hpp"
+#include "../headers/MenuWindow.hpp"
 #include <cmath>
 
 Linker::Linker(MenuWindow *parent, std::vector<Item> &array, int size, QGraphicsScene *scene, int delay)

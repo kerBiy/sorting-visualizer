@@ -2,7 +2,7 @@
 // Created by Alex Balta on 03.07.2024.
 //
 
-#include "OptionManager.hpp"
+#include "../headers/OptionManager.hpp"
 
 OptionManager::OptionManager(QComboBox *menu) : QObject(menu), m_menu(menu) {}
 
